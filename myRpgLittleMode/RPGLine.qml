@@ -4,4 +4,5 @@ Image {
     id: line
     source: "qrc:/image/myLine.png"
     transformOrigin: Image.TopLeft
+
 }

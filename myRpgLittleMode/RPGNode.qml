@@ -2,15 +2,21 @@ import QtQuick 2.7
 
 Item {
     id: node
-    width: 50; height: 50
+    width: 80; height: 50
     z: 9999
     property bool drag: true
-    property bool setNpc
-
+    property var next: []
+    property var nextLine: []
     Rectangle{
         id: background
         anchors.fill: parent
-        color: "steelblue"
+        color: "transparent"
+    }
+
+    Image{
+        id: backImage
+        anchors.fill: parent
+        source: "qrc:/image/vertex_1.png"
     }
 
     MouseArea{
@@ -48,6 +54,16 @@ Item {
         else event.drag.target =
         console.log("come on")
     }
+    function positionChanged(){
+        if(!next){
+           return
+        }else{
+            for(var tmpNode in next){
+                mainWindow.maintainLine(node, node.next[tmpNode])
+            }
+        }
+    }
+    onXChanged: positionChanged()
 
     Component.onCompleted: {
         if(drag) event.drag.target = node

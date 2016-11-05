@@ -5,5 +5,11 @@
         <file>fonts/PingFangM.ttf</file>
         <file>fonts/STKaiTi.ttf</file>
         <file>image/myLine.png</file>
+        <file>image/vertex_1.png</file>
+        <file>image/npc/npc_down.gif</file>
+        <file>image/npc/npc_left.gif</file>
+        <file>image/npc/npc_right.gif</file>
+        <file>image/npc/npc_stand.gif</file>
+        <file>image/npc/npc_up.gif</file>
     </qresource>
 </RCC>

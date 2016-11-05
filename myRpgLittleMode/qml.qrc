@@ -4,5 +4,6 @@
         <file>RPGButton.qml</file>
         <file>RPGNode.qml</file>
         <file>RPGLine.qml</file>
+        <file>RPGNpc.qml</file>
     </qresource>
 </RCC>
