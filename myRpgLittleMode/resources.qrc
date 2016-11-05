@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fonts/Hiragino Sans GB W3.otf</file>
+        <file>fonts/liberationmono.ttf</file>
+        <file>fonts/PingFangM.ttf</file>
+        <file>fonts/STKaiTi.ttf</file>
+        <file>image/myLine.png</file>
+    </qresource>
+</RCC>

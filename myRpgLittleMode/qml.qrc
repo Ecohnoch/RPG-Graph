@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>RPGButton.qml</file>
+        <file>RPGNode.qml</file>
+        <file>RPGLine.qml</file>
+    </qresource>
+</RCC>
