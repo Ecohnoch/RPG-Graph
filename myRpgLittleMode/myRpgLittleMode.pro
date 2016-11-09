@@ -2,7 +2,8 @@ TEMPLATE = app
 
 QT += core gui widgets qml quick multimedia
 CONFIG += c++11 resources_big
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    b2file.cpp
 
 RESOURCES += qml.qrc \
     resources.qrc
@@ -12,3 +13,6 @@ QML_IMPORT_PATH =
 
 # Default rules for deployment.
 include(deployment.pri)
+
+HEADERS += \
+    b2file.h

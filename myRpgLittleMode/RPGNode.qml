@@ -67,6 +67,7 @@ Item {
 
     Component.onCompleted: {
         if(drag) event.drag.target = node
+        next.push(node)
     }
 
 

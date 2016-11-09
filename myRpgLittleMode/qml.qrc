@@ -5,5 +5,9 @@
         <file>RPGNode.qml</file>
         <file>RPGLine.qml</file>
         <file>RPGNpc.qml</file>
+        <file>RPGDijkstra.qml</file>
+        <file>RPGDialog.qml</file>
+        <file>RPGImageDialog.qml</file>
+        <file>RPGMusicDialog.qml</file>
     </qresource>
 </RCC>
