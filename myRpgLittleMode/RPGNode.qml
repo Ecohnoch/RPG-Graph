@@ -7,6 +7,7 @@ Item {
     property bool drag: true
     property var next: []
     property var nextLine: []
+    property string path: "qrc:/image/vertex_1.png"
     Rectangle{
         id: background
         anchors.fill: parent
@@ -16,7 +17,7 @@ Item {
     Image{
         id: backImage
         anchors.fill: parent
-        source: "qrc:/image/vertex_1.png"
+        source: node.path
     }
 
     MouseArea{
@@ -38,6 +39,9 @@ Item {
                 console.log(drawLine)
                 line(curChosen, itemChosen)
             }
+        }
+        onDoubleClicked: {
+            fileDialog.open()
         }
     }
     function beChosen(){
@@ -64,6 +68,17 @@ Item {
         }
     }
     onXChanged: positionChanged()
+
+
+    RPGImageDialog{
+        id: fileDialog
+        title: "选取图案图片"
+        onAccepted: {
+            node.path = fileDialog.fileUrl
+            console.log(node.path)
+        }
+    }
+    onPathChanged: backImage.source = path
 
     Component.onCompleted: {
         if(drag) event.drag.target = node

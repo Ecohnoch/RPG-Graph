@@ -6,8 +6,5 @@ FileDialog {
     modality: Qt.ApplicationModal
     title: "选取背景图片"
     nameFilters: [ "Image files (*.jpg, *.png)" ]
-    onAccepted: {
-        mainWindow.imgPath = fileDialog.fileUrl
-        console.log(mainWindow.imgPath)
-    }
+
 }

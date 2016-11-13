@@ -312,6 +312,10 @@ ApplicationWindow {
     }
     RPGImageDialog{
         id: imgDialog
+        onAccepted: {
+            mainWindow.imgPath = fileDialog.fileUrl
+            console.log(mainWindow.imgPath)
+        }
     }
     onImgPathChanged: {
         canvas.addBackground(imgPath)
