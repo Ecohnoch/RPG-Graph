@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fonts/Hiragino Sans GB W3.otf</file>
+        <file>fonts/liberationmono.ttf</file>
+        <file>fonts/PingFangM.ttf</file>
+        <file>fonts/STKaiTi.ttf</file>
+        <file>image/vertex_1.png</file>
+        <file>image/npc/npc_down.gif</file>
+        <file>image/npc/npc_left.gif</file>
+        <file>image/npc/npc_right.gif</file>
+        <file>image/npc/npc_stand.gif</file>
+        <file>image/npc/npc_up.gif</file>
+        <file>image/myLine.png</file>
+        <file>image/vertex_2.png</file>
+        <file>image/background_1.png</file>
+    </qresource>
+</RCC>
